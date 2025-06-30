@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.main_div{
+    width: 100%;
+    height: 100vh;
+}
+
+.home_page_div{
+    width: 70%;
+    height: 100%;
+    margin: 0 0 0 13.9%;
+
+}
+
+.navbar_div{
+    border: solid 2px green;
+    width: 20%;
+    height: 101vh;
+    margin: -0.3% 0 0 0;
+    position: fixed;
+}
+
+.Apartment_section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0 0 0 0;
+}
+
+.TheApartment_section{
+    /* display: flex; */
+    border: solid 2px pink;
+    height:86%;
+    width: 76%;
+    margin: 0 0 0 28.5%;
+}
+.TheSpace_section{
+    display: flex;
+    border: solid 2px black;
+    margin: -9.9% 0 0 28.5%;
+    width: 71.4%;
+    height: 35%;
+}
+
+.Amenities_section{
+    border: 2px solid orange;
+    margin: 0 0 0 28.5%;
+    width: 71.4%;
+    height: 35%;
+}
+.ExtraInfo_section{
+    border: 2px solid purple;
+    margin: 0 0 0 28.5%;
+    width: 71.4%;
+    height: 35%;
+}
+
+.Rules_section{
+    border: 2px solid peru;
+    margin: 0 0 0 28.5%;
+    width: 71.4%;
+    height: 35%;
+}
+
+.Contact_section{
+    border: 2px solid darkcyan;
+     margin: 0 0 0 28.5%;
+    width: 71.4%;
+    height:76%;
+}
