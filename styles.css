@@ -16,11 +16,9 @@
     width: 70%;
     height: 100%;
     margin: 0 0 0 13.9%;
-
 }
 
 .navbar_div{
-    border: solid 2px green;
     width: 20%;
     height: 101%;
     margin: -0.3% 0 0 0;
@@ -30,7 +28,6 @@
 }
 
 .heading_1{
-    border: 2px solid black;
     height: 20%;
     width: 48%;
     margin: 9% 0 0 5%;
@@ -49,17 +46,18 @@
 }
 
 .form_section{
-    border: 2px solid red;
-    margin: 18% 0 0 0;
-    width: 100%;
+    margin: 10% 0 0 5%;
+    width: 95%;
     height: 100%;
 }
 
 #input{
-    height: 7%;
+    height: 6%;
     width: 90%;
     font-size: 15px;
     margin: 5% 0 0 0;
+    padding: 0 0 0 2%;
+    border: 1px solid lightgray;
 }
 
 #Check_out{
@@ -72,11 +70,17 @@
 
 .button_section{
     margin: 8% 0 0 0; 
-    height: 7%;
+    height: 6%;
     width: 90%;
     background-color:  #4CAF50;
     border: none;
     color: white;
+}
+
+.button_section:hover{
+    background-color: #f1f1f1;
+    color: black;
+    border: 1px solid lightgray;
 }
 
 .icons{
@@ -99,14 +103,15 @@
 }
 .TheSpace_section{
     display: flex;
-    border: solid 2px black;
+    border: 1px solid lightgray;
     margin: -9.9% 0 0 28.5%;
     width: 71.4%;
     height: 35%;
 }
 
 .Amenities_section{
-    border: 2px solid orange;
+    display: flex;
+    border: 1px solid lightgray;
     margin: 0 0 0 28.5%;
     width: 71.4%;
     height: 35%;
@@ -130,4 +135,43 @@
      margin: 0 0 0 28.5%;
     width: 71.4%;
     height:76%;
+}
+
+.icons_texts{
+    padding: 0 0 0 1%;
+}
+
+.icons_texts2{
+    margin: 0 0 0 5%;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Search_icon{
+    padding: 0 10% 0 0;
+    font-size: 15px;
+}
+
+/*The Space Section*/
+.texts_section{
+    margin: 0 0 0 2%;
+}
+
+#Check_out3{
+    margin: 8% 0 0 0;
+    font-size: 18px;
+}
+
+.icons_texts3{
+    padding: 0 0 0 2%;
+    font-size: 18px;
+}
+
+.second_section{
+    margin: 8% 0 0 0;
+}
+
+.heading_2{
+    font-weight: 600;
+    font-size: 20px;
 }
