@@ -331,16 +331,13 @@
   min-width: 45px;
 }
 
-.visa {
-
-}
 
 .mastercard {
- margin-left: -33vw;
+  margin-left: -33vw;
 }
 
 .amex {
- margin-left: -33vw;
+  margin-left: -33vw;
 }
 
 .paypal {
@@ -380,7 +377,7 @@
   max-height: 90%;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-title {
@@ -400,7 +397,10 @@
   margin-left: 1.75vw;
 }
 
-.pic1, .pic2, .pic3, .pic4 {
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
   border: 2px solid #ddd;
   width: 11vw;
   height: 12vh;
@@ -411,9 +411,12 @@
   position: relative;
 }
 
-.pic1:hover, .pic2:hover, .pic3:hover, .pic4:hover {
+.pic1:hover,
+.pic2:hover,
+.pic3:hover,
+.pic4:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .clickable-image {
@@ -426,12 +429,14 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
-  filter: blur(4px); /* initial blur */
+  filter: blur(4px);
+  /* initial blur */
 }
 
 .clickable-image:hover img {
   transform: scale(1.05);
-  filter: blur(0); /* remove blur on hover */
+  filter: blur(0);
+  /* remove blur on hover */
 }
 
 .clickable-image::after {
