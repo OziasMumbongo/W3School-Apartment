@@ -50,7 +50,28 @@
                     </div>
                 </div>
 
-                <div class="TheApartment_section"></div>
+                <div class="TheApartment_section">
+                    <h2 class="h2">The Apartment</h2>
+                    <div class="viewer" id="viewer">
+                        <div class="viewer-placeholder">
+                            <img src="W3School-Apartment/img/bedroom.jpg" alt="bedroom">
+                        </div>
+                    </div>
+                    <div class="pics">
+                        <div class="pic1 clickable-image" onclick="showImage('/W3School-Apartment/img/bedroom.jpg', 'beddroom')">
+                            <img src="W3School-Apartment/img/bedroom.jpg" alt="bedroom">
+                        </div>
+                        <div class="pic2 clickable-image" onclick="showImage('W3School-Apartment/img/diningroom.jpg', 'diningroom')">
+                            <img src="W3School-Apartment/img/diningroom.jpg" alt="diningroom">
+                        </div>
+                        <div class="pic3 clickable-image" onclick="showImage('W3School-Apartment/img/livingroom.jpg', 'livingroom')">
+                            <img src="W3School-Apartment/img/livingroom.jpg" alt="livingroom">
+                        </div>
+                        <div class="pic4 clickable-image" onclick="showImage('W3School-Apartment/img/livingroom2.jpg', 'livingroom2')">
+                            <img src="W3School-Apartment/img/livingroom2.jpg" alt="livingroom2">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="TheSpace_section">
@@ -98,10 +119,10 @@
                     <div class="payment-section">
                         <span class="payment-text">We accept:</span>
                         <div class="payment-cards">
-                            <div class="card visa">VISA</div>
-                            <div class="card mastercard">MC</div>
-                            <div class="card amex">AMEX</div>
-                            <div class="card paypal">PayPal</div>
+                            <i class="fa fa-cc-visa visa"></i>
+                            <i class="fa fa-cc-mastercard mastercard"></i>
+                            <i class="fa fa-cc-amex amex"></i>
+                            <i class="fa fa-cc-paypal paypal"></i>
                         </div>
                     </div>
                 </div>
@@ -150,6 +171,18 @@
     </div>
 
     <script>
+        // Function to show image in viewer
+        function showImage(imageSrc, imageTitle) {
+            const viewer = document.getElementById('viewer');
+            viewer.innerHTML = `
+                <div class="viewer-image">
+                    <img src="${imageSrc}" alt="${imageTitle}">
+                    <div class="image-title">${imageTitle}</div>
+                </div>
+            `;
+        }
+
+        // Contact form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Message sent');
