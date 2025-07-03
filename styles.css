@@ -1,75 +1,352 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
 }
 
-.main_div{
-    width: 100%;
-    height: 100vh;
+.main_div {
+  width: 100%;
+  height: 100vh;
 }
 
-.home_page_div{
-    width: 70%;
-    height: 100%;
-    margin: 0 0 0 13.9%;
-
+.home_page_div {
+  width: 70%;
+  height: 100%;
+  margin: 0 0 0 13.9%;
 }
 
-.navbar_div{
-    border: solid 2px green;
-    width: 20%;
-    height: 101vh;
-    margin: -0.3% 0 0 0;
-    position: fixed;
+.navbar_div {
+  width: 20%;
+  height: 101%;
+  margin: -0.3% 0 0 0;
+  position: fixed;
+  background-color: #f1f1f1;
+  overflow-y: auto;
 }
 
-.Apartment_section{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    margin: 0 0 0 0;
+.heading_1 {
+  height: 20%;
+  width: 48%;
+  margin: 9% 0 0 5%;
 }
 
-.TheApartment_section{
-    /* display: flex; */
-    border: solid 2px pink;
-    height:86%;
-    width: 76%;
-    margin: 0 0 0 28.5%;
-}
-.TheSpace_section{
-    display: flex;
-    border: solid 2px black;
-    margin: -9.9% 0 0 28.5%;
-    width: 71.4%;
-    height: 35%;
+.text_section {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.5;
 }
 
-.Amenities_section{
-    border: 2px solid orange;
-    margin: 0 0 0 28.5%;
-    width: 71.4%;
-    height: 35%;
-}
-.ExtraInfo_section{
-    border: 2px solid purple;
-    margin: 0 0 0 28.5%;
-    width: 71.4%;
-    height: 35%;
+.text_section2 {
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 5% 0 0 0;
 }
 
-.Rules_section{
-    border: 2px solid peru;
-    margin: 0 0 0 28.5%;
-    width: 71.4%;
-    height: 35%;
+.form_section {
+  margin: 10% 0 0 5%;
+  width: 95%;
+  height: 100%;
 }
 
-.Contact_section{
-    border: 2px solid darkcyan;
-     margin: 0 0 0 28.5%;
-    width: 71.4%;
-    height:76%;
+#input {
+  height: 6%;
+  width: 90%;
+  font-size: 15px;
+  margin: 5% 0 0 0;
+  padding: 0 0 0 2%;
+  border: 1px solid lightgray;
+}
+
+#Check_out {
+  margin: 8% 0 0 0;
+}
+
+#Check_out2 {
+  margin: 15% 0 0 0;
+}
+
+.button_section {
+  margin: 8% 0 0 0;
+  height: 6%;
+  width: 90%;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+}
+
+.button_section:hover {
+  background-color: #f1f1f1;
+  color: black;
+  border: 1px solid lightgray;
+}
+
+.icons {
+  margin: 23% 0 0 0;
+}
+
+.Apartment_section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.TheApartment_section {
+  border: solid 2px pink;
+  height: 86%;
+  width: 76%;
+  margin: 0 0 0 28.5%;
+}
+
+.TheSpace_section {
+  display: flex;
+  border: 1px solid lightgray;
+  margin: -9.9% 0 0 28.5%;
+  width: 71.4%;
+  height: 35%;
+}
+
+.Amenities_section {
+  display: flex;
+  border: 1px solid lightgray;
+  margin: 0 0 0 28.5%;
+  width: 71.4%;
+  height: 35%;
+}
+
+.ExtraInfo_section {
+  border: 1px solid lightgray;
+  margin: 0 0 0 28.5%;
+  width: 71.4%;
+  height: 35%;
+  padding: 2%;
+}
+
+.Rules_section {
+  border: 1px solid lightgray;
+  margin: 0 0 0 28.5%;
+  width: 71.4%;
+  height: 35%;
+  padding: 2%;
+}
+
+.Contact_section {
+  border-right: #666;
+  margin: 0 0 0 28.5%;
+  width: 71.4%;
+  height: 76%;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.left-section,
+.right-section {
+  width: 48%;
+}
+
+.lorem-text,
+.subscribe-text,
+.questions-text {
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+.subscribe-btn,
+.send-message-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.subscribe-btn:hover,
+.send-message-btn:hover {
+  background-color: #3e8e41;
+}
+
+.contact-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  resize: vertical;
+}
+
+/*The Space Section*/
+.texts_section {
+  margin: 0 0 0 2%;
+}
+
+#Check_out3 {
+  margin: 8% 0 0 0;
+  font-size: 18px;
+}
+
+.icons_texts {
+  padding: 0 0 0 1%;
+}
+
+.icons_texts2 {
+  margin: 0 0 0 5%;
+  font-size: 15px;
+  text-align: center;
+}
+
+#Search_icon {
+  padding: 0 10% 0 0;
+  font-size: 15px;
+}
+
+.icons_texts3 {
+  padding: 0 0 0 2%;
+  font-size: 18px;
+}
+
+.second_section {
+  margin: 8% 0 0 0;
+}
+
+.heading_2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Contact Section Specific Styles */
+.contact-container {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-container h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-container p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container p i {
+  margin-right: 8px;
+  width: 20px;
+}
+
+.contact-form {
+  margin: 1rem 0;
+}
+
+.powered-text {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #666;
+}
+
+.powered-text a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.powered-text a:hover {
+  color: #4CAF50;
+}
+
+/* Extra Info and Rules Section Styles */
+.section-content {
+  width: 100%;
+  height: 100%;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.section-text {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.payment-section {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.payment-text {
+  font-size: 15px;
+  margin-left: 1rem;
+  color: #333;
+}
+
+.payment-cards {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: -30vw;
+}
+
+.card {
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  min-width: 45px;
+}
+
+.visa {
+  background-color: #1a1f71;
+}
+
+.mastercard {
+  background-color: #eb001b;
+}
+
+.amex {
+  background-color: #006fcf;
+}
+
+.paypal {
+  background-color: #003087;
 }
