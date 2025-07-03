@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheApartment</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="main_div">
@@ -14,12 +14,8 @@
             <div class="Apartment_section">
                 <div class="navbar_div">
                     <div class="heading_1">
-                        <h1 class="text_section">
-                            Rental from $99
-                        </h1>
-                        <h3 class="text_section2">
-                            per night
-                        </h3>
+                        <h1 class="text_section">Rental from $99</h1>
+                        <h3 class="text_section2">per night</h3>
                     </div>
                     <div class="form_section">
                         <i class="fa fa-calendar-check-o" aria-hidden="true"><span class="icons_texts">Check In</span></i>
@@ -32,7 +28,7 @@
                         <input type="number" value="1" name="Adults" id="input" min="1" max="6">
 
                         <i class="fa fa-child" aria-hidden="true" id="Check_out"><span class="icons_texts">Kids</span></i>
-                        <input type="number" value="0" name="Adults" id="input" min="0" max="6">
+                        <input type="number" value="0" name="Kids" id="input" min="0" max="6">
 
                         <button class="button_section">
                             <i class="fa fa-search" aria-hidden="true" id="Search_icon"><span class="icons_texts2">Search Availability</span></i>
@@ -46,27 +42,24 @@
                     </div>
                 </div>
 
-                <div class="TheApartment_section">
-
-                </div>
+                <div class="TheApartment_section"></div>
             </div>
-                
+
             <div class="TheSpace_section">
-                <div class="texts_section"> 
+                <div class="texts_section">
                     <h3 class="heading_2">The Space</h3>
-                     <i class="fa fa-male" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Max people: 4</span></i>
-                     <i class="fa fa-bath" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Bathrooms: 2</span></i>
-                     <i class="fa fa-bed" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Bedrooms: 1</span></i>
+                    <i class="fa fa-male" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Max people: 4</span></i>
+                    <i class="fa fa-bath" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Bathrooms: 2</span></i>
+                    <i class="fa fa-bed" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Bedrooms: 1</span></i>
                 </div>
 
                 <div class="texts_section">
                     <div class="second_section">
                         <i class="fa fa-clock-o" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Check In: After 3PM</span></i>
-                        <i class="fa fa-clock-o" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Check Out:12PM</span></i>
+                        <i class="fa fa-clock-o" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Check Out: 12PM</span></i>
                     </div>
                 </div>
             </div>
-
 
             <div class="Amenities_section">
                 <div class="texts_section">
@@ -86,15 +79,72 @@
             </div>
 
             <div class="ExtraInfo_section">
-
+                <div class="section-content">
+                    <h2 class="section-heading">Extra Info</h2>
+                    <p class="section-text">
+                        Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat.
+                    </p>
+                    <div class="payment-section">
+                        <span class="payment-text">We accept:</span>
+                        <div class="payment-cards">
+                            <div class="card visa">VISA</div>
+                            <div class="card mastercard">MC</div>
+                            <div class="card amex">AMEX</div>
+                            <div class="card paypal">PayPal</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             <div class="Rules_section">
-
+                <div class="section-content">
+                    <h2 class="section-heading">Rules</h2>
+                    <p class="section-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class="section-text">
+                        Subscribe to receive updates on available dates and special offers.
+                    </p>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
             </div>
+
+            <!-- CONTACT SECTION -->
             <div class="Contact_section">
+                <div class="contact-container">
+                    <h2 class="contact-heading">Contact</h2>
 
+                    <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+                    <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+                    <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+
+                    <p class="questions-text">Questions? Go ahead, ask them:</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" class="input-field" placeholder="Name" name="name" required>
+                        <input type="text" class="input-field" placeholder="Email" name="email" required>
+                        <input type="text" class="input-field" placeholder="Message" name="message" required>
+                        <button type="submit" class="send-message-btn">Send a Message</button>
+                    </form>
+
+                    <p class="powered-text">Powered by <a href="https://www.w3schools.com/w3css">w3.css</a></p>
+                </div>
             </div>
+            <!-- END CONTACT SECTION -->
+
         </div>
     </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent');
+        });
+    </script>
 </body>
 </html>
