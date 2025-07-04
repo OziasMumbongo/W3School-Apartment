@@ -1,62 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheApartment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="main_div">
+
         <div class="home_page_div">
+
             <div class="Apartment_section">
+
                 <div class="navbar_div">
                     <div class="heading_1">
                         <h1 class="text_section">Rental from $99</h1>
                         <h3 class="text_section2">per night</h3>
                     </div>
                     <div class="form_section">
-                        <i class="fa fa-calendar-check-o" aria-hidden="true"><span class="icons_texts">Check In</span></i>
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"><span class="icons_texts">Check
+                                In</span></i>
                         <input type="text" name="date" id="input" placeholder="DD MM YYYY">
 
                         <i class="fa fa-calendar-o" id="Check_out"><span class="icons_texts">Check out</span></i>
                         <input type="text" name="date" id="input" placeholder="DD MM YYYY">
 
-                        <i class="fa fa-male" aria-hidden="true" id="Check_out"><span class="icons_texts">Adults</span></i>
+                        <i class="fa fa-male" aria-hidden="true" id="Check_out"><span
+                                class="icons_texts">Adults</span></i>
                         <input type="number" value="1" name="Adults" id="input" min="1" max="6">
 
-                        <i class="fa fa-child" aria-hidden="true" id="Check_out"><span class="icons_texts">Kids</span></i>
+                        <i class="fa fa-child" aria-hidden="true" id="Check_out"><span
+                                class="icons_texts">Kids</span></i>
                         <input type="number" value="0" name="Kids" id="input" min="0" max="6">
 
                         <button class="button_section">
-                            <i class="fa fa-search" aria-hidden="true" id="Search_icon"><span class="icons_texts2">Search Availability</span></i>
+                            <i class="fa fa-search" aria-hidden="true" id="Search_icon"><span
+                                    class="icons_texts2">Search Availability</span></i>
                         </button>
 
                         <div class="icons">
                             <i class="fa fa-building" aria-hidden="true"><span class="icons_texts">Apartment</span></i>
-                            <i class="fa fa-rss" aria-hidden="true" id="Check_out2"><span class="icons_texts">Subscribe</span></i>
-                            <i class="fa fa-envelope" aria-hidden="true" id="Check_out2"><span class="icons_texts">Contact</span></i>
+                            <i class="fa fa-rss" aria-hidden="true" id="Check_out2"><span
+                                    class="icons_texts">Subscribe</span></i>
+                            <i class="fa fa-envelope" aria-hidden="true" id="Check_out2"><span
+                                    class="icons_texts">Contact</span></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="TheApartment_section"></div>
+                <div class="TheApartment_section">
+                    <h2 class="h2">The Apartment</h2>
+                    <div class="viewer" id="viewer">
+                        <div class="viewer-placeholder">
+                            <img src="W3School-Apartment/img/bedroom.jpg" alt="bedroom">
+                        </div>
+                    </div>
+                    <div class="pics">
+                        <div class="pic1 clickable-image"
+                            onclick="showImage('/W3School-Apartment/img/bedroom.jpg', 'beddroom')">
+                            <img src="W3School-Apartment/img/bedroom.jpg" alt="bedroom">
+                        </div>
+                        <div class="pic2 clickable-image"
+                            onclick="showImage('W3School-Apartment/img/diningroom.jpg', 'diningroom')">
+                            <img src="W3School-Apartment/img/diningroom.jpg" alt="diningroom">
+                        </div>
+                        <div class="pic3 clickable-image"
+                            onclick="showImage('W3School-Apartment/img/livingroom.jpg', 'livingroom')">
+                            <img src="W3School-Apartment/img/livingroom.jpg" alt="livingroom">
+                        </div>
+                        <div class="pic4 clickable-image"
+                            onclick="showImage('W3School-Apartment/img/livingroom2.jpg', 'livingroom2')">
+                            <img src="W3School-Apartment/img/livingroom2.jpg" alt="livingroom2">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="TheSpace_section">
                 <div class="texts_section">
                     <h3 class="heading_2">The Space</h3>
-                    <i class="fa fa-male" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Max people: 4</span></i>
-                    <i class="fa fa-bath" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Bathrooms: 2</span></i>
-                    <i class="fa fa-bed" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Bedrooms: 1</span></i>
+                    <i class="fa fa-male" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Max people:
+                            4</span></i>
+                    <i class="fa fa-bath" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Bathrooms:
+                            2</span></i>
+                    <i class="fa fa-bed" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Bedrooms:
+                            1</span></i>
                 </div>
 
                 <div class="texts_section">
                     <div class="second_section">
-                        <i class="fa fa-clock-o" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Check In: After 3PM</span></i>
-                        <i class="fa fa-clock-o" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Check Out: 12PM</span></i>
+                        <i class="fa fa-clock-o" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Check In:
+                                After 3PM</span></i>
+                        <i class="fa fa-clock-o" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Check
+                                Out: 12PM</span></i>
                     </div>
                 </div>
             </div>
@@ -64,16 +110,21 @@
             <div class="Amenities_section">
                 <div class="texts_section">
                     <h3 class="heading_2">Amenities</h3>
-                    <i class="fa fa-shower" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Shower</span></i>
+                    <i class="fa fa-shower" aria-hidden="true" id="Check_out3"><span
+                            class="icons_texts3">Shower</span></i>
                     <i class="fa fa-wifi" aria-hidden="true" id="Check_out3"><span class="icons_texts3">WiFi</span></i>
-                    <i class="fa fa-television" aria-hidden="true" id="Check_out3"><span class="icons_texts3">TV</span></i>
+                    <i class="fa fa-television" aria-hidden="true" id="Check_out3"><span
+                            class="icons_texts3">TV</span></i>
                 </div>
 
                 <div class="texts_section">
                     <div class="second_section">
-                        <i class="fa fa-cutlery" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Kitchen</span></i>
-                        <i class="fa fa-thermometer-full" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Heating</span></i>
-                        <i class="fa fa-wheelchair" aria-hidden="true" id="Check_out3"><span class="icons_texts3">Accessible</span></i>
+                        <i class="fa fa-cutlery" aria-hidden="true" id="Check_out3"><span
+                                class="icons_texts3">Kitchen</span></i>
+                        <i class="fa fa-thermometer-full" aria-hidden="true" id="Check_out3"><span
+                                class="icons_texts3">Heating</span></i>
+                        <i class="fa fa-wheelchair" aria-hidden="true" id="Check_out3"><span
+                                class="icons_texts3">Accessible</span></i>
                     </div>
                 </div>
             </div>
@@ -82,29 +133,32 @@
                 <div class="section-content">
                     <h2 class="section-heading">Extra Info</h2>
                     <p class="section-text">
-                        Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit
+                        amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.
                     </p>
                     <div class="payment-section">
                         <span class="payment-text">We accept:</span>
                         <div class="payment-cards">
-                            <div class="card visa">VISA</div>
-                            <div class="card mastercard">MC</div>
-                            <div class="card amex">AMEX</div>
-                            <div class="card paypal">PayPal</div>
+                            <i class="fa fa-cc-visa visa"></i>
+                            <i class="fa fa-cc-mastercard mastercard"></i>
+                            <i class="fa fa-cc-amex amex"></i>
+                            <i class="fa fa-cc-paypal paypal"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="Rules_section">
                 <div class="section-content">
                     <h2 class="section-heading">Rules</h2>
                     <p class="section-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris
                         nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <p class="section-text">
@@ -138,13 +192,27 @@
             <!-- END CONTACT SECTION -->
 
         </div>
+
     </div>
 
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        // Function to show image in viewer
+        function showImage(imageSrc, imageTitle) {
+            const viewer = document.getElementById('viewer');
+            viewer.innerHTML = `
+                <div class="viewer-image">
+                    <img src="${imageSrc}" alt="${imageTitle}">
+                    <div class="image-title">${imageTitle}</div>
+                </div>
+            `;
+        }
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('Message sent');
         });
     </script>
 </body>
+
 </html>
